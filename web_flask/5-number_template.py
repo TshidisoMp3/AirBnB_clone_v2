@@ -38,7 +38,6 @@ def numbz(n):
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_templatezz(n):
-    """Function to show/return n is a number"""
     return render_template('5-number.html', numbzz=n)
 
 if __name__ == "__main__":
