@@ -11,7 +11,7 @@ def hihi_hbnb():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def Yello():
+def Yelloz():
     return 'HBNB'
 
 
