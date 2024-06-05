@@ -45,9 +45,10 @@ def number_templatezz(n):
 def numberOddOrEven(n):
     """Function to show/return n is odd or even"""
     if n % 2 == 0:
-        return render_template('6-number_odd_or_even.html', numbzz=n, odd_even='even')
+        numbzz = "{} is even".format(n)
     else:
-        return render_template('6-number_odd_or_even.html', numbzz=n, odd_even='odd')
+        numbzz = "{} is odd".format(n)
+    return render_template('6-number_odd_or_even.html', numbzz=numbzz, numb=n)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
